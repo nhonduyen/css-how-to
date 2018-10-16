@@ -1,0 +1,36 @@
+.sidebar {
+    background-color: #111;
+    overflow-x: hidden; /* disable horizone scroll */
+    height: 100%; /* full height, remove it if you want auto height */
+    width: 160px;
+    position: fixed; /* fixed sidebar, stay in place on scroll */
+    z-index: 1; /* stay on top */
+    top: 0; /* stay on top */
+    left: 0;
+    padding-top: 20px;
+}
+.sidebar a {
+    color: #818181;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+}
+.sidebar a:hover {
+    background-color: #f1f1f1;
+}
+.main {
+    margin-left: 160px;/* same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar 
+(less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}

@@ -1,0 +1,45 @@
+.sidebar {
+    background-color: #111;
+    overflow-x: hidden; /* disable horizone scroll */
+    height: 100%; /* full height, remove it if you want auto height */
+    width: 0; /* change this with javascript */
+    position: fixed; /* fixed sidebar, stay in place on scroll */
+    z-index: 1; /* stay on top */
+    top: 0; /* stay on top */
+    left: 0;
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidebar a {
+    color: #818181;
+    padding: 6px 8px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+    background-color: #f1f1f1;
+}
+.sidebar .closebtn {
+    position: absolute;
+    cursor: pointer;
+    color: wheat;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar 
+(less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
