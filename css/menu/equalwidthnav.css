@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.topnav {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+.topnav a {
+    float: left;
+    padding: 12px;
+    width: 25%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #000;
+}
+.active {
+    background-color: #4CAF50;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
+Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 500px) {
+    .topnav a{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}

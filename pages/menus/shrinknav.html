@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./../../css/menu/shrinknav.css" />
+    <title>Shrink nav on scroll</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a id="logo" href="./../../menu.html" class="active"><i class="fa fw fa-home"></i>Home</a>
+        <div id="nav-right">
+            <a href="#news"><i class="fa fw fa-newspaper-o"></i>News</a>
+            <a href="#contact"><i class="fa fw fa-envelope"></i>Contact</a>
+            <a href="#about"><i class="fa fw fa-address-card-o"></i>About</a>
+        </div>
+    </div>
+    <div class="main">
+        <h1>Some header</h1>
+        <p>Some text</p>
+    </div>
+    <script>
+        let main = document.getElementsByClassName("main")[0];
+        for (let i = 0; i < 30; i++) {
+            main.innerHTML += ` <p>
+            A demonstration of how to use the contents property value. 
+            In the following example the .a container will disappear, 
+            and making the child elements (.b)
+             children of the element the next level up in the DOM:
+        </p>`;
+        }
+       // When the user scrolls down 80px from the top of the document, 
+       //resize the navbar's padding and the logo's font size
+        window.onscroll = () => scrollFunction();
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("myTopnav").style.padding = "30px 10px";
+                document.getElementById("logo").style.fontSize = "25px";
+            }
+            else {
+                document.getElementById("myTopnav").style.padding = "80px 10px";
+                document.getElementById("logo").style.fontSize = "35px";
+            }
+          
+        }
+    </script>
+</body>
+
+</html>
