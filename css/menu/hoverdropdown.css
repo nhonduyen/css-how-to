@@ -22,6 +22,7 @@ body {
     color: white;
 }
 .dropdown {
+    background-color: inherit;
     float: left;
     overflow: hidden;
 }
