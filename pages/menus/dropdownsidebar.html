@@ -6,20 +6,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./../../css/menu/hoversidebar.css" />
-    <title>Hover sidebar</title>
+    <link rel="stylesheet" href="./../../css/menu/dropdownsidebar.css" />
+    <script src="./../../js/menu/dropdownsidebar.js" defer></script>
+    <title>Dropdown in Sidebar</title>
 </head>
 
 <body>
     <aside class="sidebar" id="mySidenav">
-        <a href="./../../menu.html" id="home">Home<i class="fa fa-home"></i></a>
-        <a href="#contact" id="contact">Contact<i class="fa fa-envelope"></i></a>
-        <a href="#about" id="about">About<i class="fa fa-address-card-o"></i></a>
-        <a href="#client" id="client">Client<i class="fa fa-user"></i></a>
+        <a class="active" href="./../../menu.html">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <button class="dropdown-btn">Dropdown
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <a href="#client">Client</a>
     </aside>
+
     <!-- Add all page content inside this div if you want the side nav to push page content to the right 
         (not used if you only want the sidenav to sit on top of the page -->
-    <div class="main" id="main">
+    <div class="content" id="main">
         <h1>Content bla bla</h1>
         <p>Content bla bla</p>
         <p>
