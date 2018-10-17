@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./../../css/menu/hoverdropdown.css" />
+    <title>Hover dropdown</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="./../../menu.html" class="active"><i class="fa fw fa-home"></i>Home</a>
+        <a href="#news"><i class="fa fw fa-newspaper-o"></i>News</a>
+        <a href="#contact"><i class="fa fw fa-envelope"></i>Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn">About
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#about"><i class="fa fw fa-address-card-o"></i>About1</a>
+                <a href="#about"><i class="fa fw fa-address-card-o"></i>About2</a>
+                <a href="#about"><i class="fa fw fa-address-card-o"></i>About3</a>
+            </div>
+        </div>
+        <div class="dropdown" id="drop">
+            <button class="dropbtn" onclick="showDropdown();">Click me
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#about"><i class="fa fw fa-address-card-o"></i>About1</a>
+                <a href="#about"><i class="fa fw fa-address-card-o"></i>About2</a>
+                <a href="#about"><i class="fa fw fa-address-card-o"></i>About3</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+        function myFunction() {
+            const x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+            console.log(x.className);
+        }
+        function showDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                let dropdowns = document.getElementsByClassName("dropdown-content");
+                for (let i = 0; i < dropdowns.length; i++) {
+                    if (dropdowns[i].classList.contains("show")) {
+                        dropdowns[i].classList.remove("show");
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
