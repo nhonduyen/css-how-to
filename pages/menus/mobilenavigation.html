@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./../../css/menu/mobilenavigation.css" />
+    <title>Mobile Navigation</title>
+</head>
+
+<body>
+    <div class="mobile-container">
+        <div class="topnav" id="myTopnav">
+            <a href="./../../menu.html" class="active"><i class="fa fw fa-home"></i>Home</a>
+            <div class="myLinks" id="myLinks">
+                <a href="#news"><i class="fa fw fa-newspaper-o"></i>News</a>
+                <a href="#contact"><i class="fa fw fa-envelope"></i>Contact</a>
+                <a href="#about"><i class="fa fw fa-address-card-o"></i>About</a>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="content">
+            <p>
+
+                Vertical Mobile Navbar
+
+                This example demonstrates how a navigation menu on a mobile/smart phone could look like.
+
+                Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.
+
+            </p>
+        </div>
+    </div>
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav 
+        when the user clicks on the icon */
+        function myFunction() {
+            const x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            }
+            else {
+                x.style.display = "block";
+            }
+
+        }
+    </script>
+</body>
+
+</html>
