@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./../../css/menu/submenu.css" />
+    <title>Subnavigation Menu</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="./../../menu.html" class="active"><i class="fa fw fa-home"></i>Home</a>
+        <a href="#news"><i class="fa fw fa-newspaper-o"></i>News</a>
+        <a href="#contact"><i class="fa fw fa-envelope"></i>Contact</a>
+        <a href="#about"><i class="fa fw fa-address-card-o"></i>About</a>
+        <div class="subnav">
+            <button class="subnavbtn">Subnav 1 <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#">Item 1</a>
+                <a href="#">Item 1</a>
+                <a href="#">Item 1</a>
+            </div>
+        </div>
+
+        <div class="subnav">
+            <button class="subnavbtn">Subnav 2 <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#">Item 2</a>
+                <a href="#">Item 2</a>
+                <a href="#">Item 2</a>
+            </div>
+        </div>
+
+        <div class="subnav">
+            <button class="subnavbtn">Subnav 3 <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#">Item 3</a>
+                <a href="#">Item 3</a>
+                <a href="#">Item 3</a>
+            </div>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav 
+        when the user clicks on the icon */
+        function myFunction() {
+            const x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+            console.log(x.className);
+        }
+    </script>
+</body>
+
+</html>
