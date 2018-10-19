@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./../../css/images/tabgallery.css" />
+    <script defer src="./../../js/images/tabgallery.js"></script>
+    <title>Tab Gallery</title>
+</head>
+
+<body>
+    <a href="./../../images.html">Images</a>
+    <div class="row">
+        <div class="column">
+            <img onclick="openImg(this);" src="https://placeimg.com/300/300/animals" alt="people">
+        </div>
+        <div class="column">
+            <img onclick="openImg(this);" src="https://placeimg.com/300/300/arch" alt="animals">
+        </div>
+        <div class="column">
+            <img onclick="openImg(this);" src="https://placeimg.com/300/300/people" alt="nature">
+        </div>
+        <div class="column">
+            <img onclick="openImg(this);" src="https://placeimg.com/300/300/tech" alt="tech">
+        </div>
+    </div>
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none';" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%" src="" alt="">
+        <span id="imgText"></span>
+    </div>
+</body>
+
+</html>
