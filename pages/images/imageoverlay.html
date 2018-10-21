@@ -5,29 +5,28 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./../../css/images/imagegrid.css" />
-    <script defer src="./../../js/images/imagegrid.js"></script>
+    <link rel="stylesheet" href="./../../css/images/imageoverlay.css" />
     <title>Image Overlay</title>
 </head>
 
 <body>
     <a href="./../../images.html">Images</a>
-    <h1>Overlay fade</h1>
     <div class="row">
-        <div class="column50">
-            <img src="./../../img/avatar.png" alt="avatar" class="image">
-            <div class="overlay">
-                <div class="text">Hello World</div>
-            </div>
-        </div>
-        <div class="column50">
-            <img src="./../../img/avatar.png" alt="avatar" class="image">
-            <div class="overlay">
-                <div class="text">Hello World</div>
-            </div>
-        </div>
+        <figure class="column1" id="pic1">
+            <img src="./../../img/avatar.png" alt="avatar" class="image1">
+            <figcaption class="overlay">
+                <span class="text">Overlay fade</span>
+            </figcaption>
+        </figure>
     </div>
-
+    <div class="row">
+        <figure class="column2" id="pic2">
+            <img src="./../../img/avatar.png" alt="avatar" class="image2">
+            <figcaption class="middle">
+                <span class="text2">Overlay box</span>
+            </figcaption>
+        </figure>
+    </div>
 </body>
 
 </html>
