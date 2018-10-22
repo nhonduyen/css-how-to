@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+    position: relative;
+    width: 20%;
+    max-width: 400px;
+}
+/* Make the image to responsive */
+.image {
+    width: 100%;
+    height: auto;
+}
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+figcaption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: .3s ease;
+    opacity: 0;
+    background-color: red;
+ }
+
+.container:hover figcaption {
+  opacity: 1;
+}
+.icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.fa-user:hover {
+    color: #eee;
+}

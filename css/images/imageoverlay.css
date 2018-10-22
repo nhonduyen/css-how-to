@@ -36,6 +36,24 @@ img {
     width: 100%;
     vertical-align: middle;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    background-color: #008CBA;
+    opacity: 0;
+}
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+    position: relative;
+    width: 25%;
+}
 .image2 {
     width: 100%;
     opacity: 1;
@@ -43,22 +61,10 @@ img {
     transition: .5s ease;
     backface-visibility: hidden;
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 25%;
-    height: 100%;
-    transition: .5s ease;
-    background-color: #008CBA;
-    opacity: 0;
-}
 .middle {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
     transition: .5s ease;
     opacity: 0;
     text-align: center;
@@ -78,23 +84,20 @@ img {
     text-align: center;
 }
 .text2 {
-    top: 50%;
-    left: 50%;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
     text-align: center;
     background-color: #4CAF50;
-    position: inherit;
 }
 #pic1:hover .overlay{
     opacity: 0.5;
 }
 
-.column2:hover img {
+.container:hover .image2 {
     opacity: 0.3;
 }
-.column2:hover .middle {
+.container:hover .middle {
     opacity: 1;
     background-color: red;
 }

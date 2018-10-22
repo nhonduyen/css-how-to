@@ -1,0 +1,23 @@
+
+* {
+    box-sizing: border-box;
+}
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    padding: 0 4px;
+}
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 100%;
+    padding: 0 4px;
+}
+img {
+    width: 100%;
+}
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+}
