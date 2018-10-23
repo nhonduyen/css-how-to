@@ -1,0 +1,21 @@
+.btn {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    background-color: inherit;
+    font-size: 16px;
+    display: inline-block;
+}
+.btn:hover {
+    background: #eee;
+}
+
+.success {color: green;}
+.info {color: dodgerblue;}
+
+.danger {color: red;}
+
+.warning {color: orange;}
+
+.dafault {color: black;}

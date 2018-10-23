@@ -1,0 +1,11 @@
+.btn {
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: royalblue;
+}
