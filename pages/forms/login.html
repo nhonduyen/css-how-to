@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./../../css/forms/login.css" />
+    <script src="./../../js/forms/login.js" defer></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <form action="">
+        <figure class="imgcontainer">
+            <img src="./../../img/avatar.png" alt="avatar" class="avatar" width="100" height="100">
+        </figure>
+        <div class="container">
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <label for="pwd"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="pwd" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" name="remember" checked>Remeber me
+            </label>
+        </div>
+        <div class="container" style="background-color: #f1f1f1;">
+            <button type="reset" class="cancelBtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">Password?</a></span>
+        </div>
+    </form>
+    <button class="cancelBtn" id="btnModal">Modal</button>
+    <div id="id01" class="modal">
+        <span class="close" id="closeBtn" title="Close Modal">&times;</span>
+        <form action="" class="modal-content animate">
+            <figure class="imgcontainer">
+                <img src="./../../img/avatar.png" alt="avatar" class="avatar" width="100" height="100">
+            </figure>
+            <div class="container">
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+
+                <label for="pwd"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="pwd" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" name="remember" checked>Remeber me
+                </label>
+            </div>
+            <div class="container" style="background-color: #f1f1f1;">
+                <button type="reset" class="cancelBtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">Password?</a></span>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./../../css/forms/checkout.css" />
+    <title>Check Out</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form action="">
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Billing Address</h3>
+                            <label for="name"><i class="fa fa-user"></i> Full Name</label>
+                            <input type="text" name="name" placeholder="John Doe" required>
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="email" name="email" placeholder="JohnDoe@abc.com" required>
+                            <label for="address"><i class="fa fa-address-card-o"></i> Address</label>
+                            <input type="text" name="address" placeholder="1 Wall Street, NY" required>
+                            <label for="city"><i class="fa fa-institution"></i> City</label>
+                            <input type="text" name="city" placeholder="John Doe" required>
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state"><i class="fa fa-map-pin"></i> State</label>
+                                    <input type="text" name="state" placeholder="California" required>
+                                </div>
+                                <div class="col-50">
+                                    <label for="zip"><i class="fa fa-fax"></i> Zip Code</label>
+                                    <input type="text" name="zip" placeholder="084" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-50">
+                            <h3>Payment</h3>
+                            <label for="name">Accept Card</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label for="namecard">Name on Card</label>
+                            <input type="text" name="namecard" placeholder="John Doe" required>
+                            <label for="credit">Credit Card Number</label>
+                            <input type="text" name="credit" placeholder="1111-2222-3333-4444" required>
+                            <label for="exp">Exp month</label>
+                            <input type="text" name="exp" placeholder="September" required>
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Exp Year</label>
+                                    <input type="text" name="expyear" placeholder="2018" required>
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" name="cvv" placeholder="154" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="">
+                        <input type="checkbox" name="sameadr" checked> Shipping address as billing.
+                    </label>
+                    <button type="submit" class="btn">Continue to Checkout</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-25">
+            <div class="container">
+                <h4>Cart
+                    <span class="price" style="color:black">
+                        <i class="fa fa-shopping-cart"></i>
+                        <b>4</b>
+                    </span>
+                </h4>
+                <p><a href="#">Product 1</a><span class="price">$15</span></p>
+                <p><a href="#">Product 2</a><span class="price">$15</span></p>
+                <p><a href="#">Product 3</a><span class="price">$15</span></p>
+                <p><a href="#">Product 4</a><span class="price">$15</span></p>
+                <hr>
+                <p>Total <span class="price" style="color:black"><b>$60</b></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
