@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+main {
+    width: 100%;
+    height: auto;
+}
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    bottom: 23px;
+    right: 28px;
+    opacity: 0.8;
+    width: 280px;
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+.form-container input[type=text], input[type=password] { 
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background-color: #f1f1f1;
+}
+.form-container input[type=text]:hover, input[type=password]:hover { 
+    background-color: #ddd;
+    outline: none;
+}
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+}
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+.form-container .cancel {
+    background-color: #f44336;
+}
+

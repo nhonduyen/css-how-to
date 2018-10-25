@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+input[type=search] {
+    border: 1px solid gray;
+    float: left;
+    font-size: 17px;
+    width: 80%;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+button {
+    background-color: #4CAF50;
+    float: left;
+    width: 20%;
+    font-size: 17px;
+    color: white;
+    padding: 10px;
+    border: 1px solid gray;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0b7dda;
+}
+form::after {
+    content: "";
+    clear: both;
+    display: table;
+}
