@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./../../css/forms/multistepform.css" />
+    <script src="./../../js/forms/multistepform.js" defer></script>
+    <title>Multistep Form</title>
+</head>
+
+<body>
+    <form action="" id="regForm">
+        <h1>Register</h1>
+        <div class="tab">Name:
+            <p><input type="text" placeholder="First name..." oninput="this.className=''"></p>
+            <p><input type="text" placeholder="Last name..." oninput="this.className=''"></p>
+        </div>
+
+        <div class="tab">Contact Info:
+            <p><input type="email" placeholder="Email..." oninput="this.className=''"></p>
+            <p><input type="tel" placeholder="Phone..." oninput="this.className=''"></p>
+        </div>
+
+        <div class="tab">Birthday:
+            <p><input type="text" placeholder="dd" oninput="this.className=''"></p>
+            <p><input type="text" placeholder="mm" oninput="this.className=''"></p>
+            <p><input type="text" placeholder="yyyy" oninput="this.className=''"></p>
+        </div>
+
+        <div class="tab">Login Info:
+            <p><input type="text" placeholder="Username..." oninput="this.className=''"></p>
+            <p><input type="password" placeholder="Password..." oninput="this.className=''"></p>
+        </div>
+
+        <div style="overflow: auto;">
+            <div style="float:right">
+                <button id="prevBtn">Previous</button>
+                <button id="prevNext">Next</button>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+        </div>
+    </form>
+</body>
+
+</html>
