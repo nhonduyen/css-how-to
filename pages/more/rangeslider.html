@@ -5,25 +5,23 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./../../css/more/progressbar.css" />
-    <script defer src="./../../js/more/progressbar.js"></script>
+    <link rel="stylesheet" href="./../../css/more/rangeslider.css" />
+    <script defer src="./../../js/more/rangeslider.js"></script>
     <title>Range Slider</title>
 </head>
 
 <body>
-    <div class="slidecontainer">
-        <input type="range" min="0" max="100" value="50" class="slider" id="myRange1">
+    <div>
+        <input type="range" min="0" max="100" value="50" id="myRange1">
     </div>
     <div class="slidecontainer">
-        <input type="range" min="0" max="100" value="50" class="slider" id="myRange2">
+        <input type="range" min="0" max="100" value="50" class="round" id="myRange2">
     </div>
+    <hr>
     <div class="slidecontainer">
         <input type="range" min="0" max="100" value="50" class="slider" id="myRange3">
     </div>
-    <div class="slidecontainer">
-        <input type="range" min="0" max="100" value="50" class="slider" id="myRange4">
-    </div>
-    <label id="lblResult">Value: </label>
+    <output id="result"></output>
 </body>
 
 </html>
