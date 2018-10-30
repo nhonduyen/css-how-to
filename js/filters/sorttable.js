@@ -1,7 +1,7 @@
-let ul = document.getElementById("id01");
+let tb = document.getElementById("myTable");
 let btn = document.getElementById("btnSort");
-btn.addEventListener("click", sortList);
-function sortList() {
+btn.addEventListener("click", sortTable);
+function sortTable() {
     let i;
     let switchCount = 0;
     let swiching = true;
@@ -10,27 +10,30 @@ function sortList() {
     console.log('----' + dir);
     while (swiching) {
         swiching = false;
-        let li = ul.getElementsByTagName("li");
-        for (i = 0; i < (li.length - 1); i++) {
+        let rows = tb.rows;
+
+        for (i = 1; i < (rows.length - 1); i++) {
             shouldSwitch = false;
             console.log(dir);
+            let row1 = rows[i].getElementsByTagName("td")[0];
+            let row2 = rows[i + 1].getElementsByTagName("td")[0];
+            
             if (dir === "asc") {
-                if (li[i].innerHTML.toLowerCase() > li[i + 1].innerHTML.toLowerCase()) {
-                    console.log(li[i].innerHTML.toLowerCase() + '>' + li[i + 1].innerHTML.toLowerCase())
+                if (row1.innerHTML.toLowerCase() > row2.innerHTML.toLowerCase()) {
+                    console.log(rows[i].innerHTML.toLowerCase() + '>' + rows[i + 1].innerHTML.toLowerCase())
                     shouldSwitch = true;
                     break;
                 }
             } else if (dir === "desc") {
-                if (li[i].innerHTML.toLowerCase() < li[i + 1].innerHTML.toLowerCase()) {
-                    console.log(li[i].innerHTML.toLowerCase() + '<' + li[i + 1].innerHTML.toLowerCase())
+                if (row1.innerHTML.toLowerCase() < row2.innerHTML.toLowerCase()) {
+                    console.log(rows[i].innerHTML.toLowerCase() + '<' + rows[i + 1].innerHTML.toLowerCase())
                     shouldSwitch = true;
                     break;
                 }
             }
         }
         if (shouldSwitch) {
-            console.log([li[i].innerHTML, li[i + 1].innerHTML]);
-            li[i].parentNode.insertBefore(li[i + 1], li[i]);
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
             swiching = true;
             switchCount++;
             console.log(switchCount);

@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+/* The progress container (grey background) */
+.container {
+    width: 100%;
+    background: #ddd;
+}
+/* The progress bar (scroll indicator) */
+.skills {
+   text-align: right;
+   padding: 10px;
+   color: white;
+}
+
+.html {
+    width: 90%;
+    background-color: #4CAF50;
+}
+.css {
+    width: 80%;
+    background-color: #2196F3;
+}
+.js {
+    width: 65%;
+    background-color: #f44336;
+}
+.php {
+    width: 60%;
+    background-color: #808080;
+}
