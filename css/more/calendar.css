@@ -26,15 +26,24 @@ body {
 .month .prev {
     float: left;
     padding-top: 10px;
+    cursor: pointer;
+}
+.month .prev:hover {
+    color: red;
 }
 .month .next {
     float: right;
     padding-top: 10px;
+    cursor: pointer;
+}
+.month .next:hover {
+    color: red;
 }
 .weekdays {
     margin: 0;
     padding: 10px 0;
     background-color: #ddd;
+    width: 100%;
 }
 .weekdays li {
     display: inline-block;
@@ -46,6 +55,7 @@ body {
     padding: 10px 0;
     background: #eee;
     margin: 0;
+    width: 100%;
 }
 .days li {
     list-style-type: none;
@@ -61,4 +71,15 @@ body {
     padding: 5px;
     background: #1abc9c;
     color: white !important;
+    text-align: center;
+}
+@media screen and (max-width: 720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
 }
