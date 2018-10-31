@@ -1,0 +1,40 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.closebtn {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    top: 5px;
+    right: 15px;;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closebtn:hover {
+    color: black;
+}
+.callout {
+    display: none;
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    margin-left: 20px;
+    max-width: 300px;
+}
+.callout-container {
+    padding: 15px;
+    background-color: #ccc;
+    color: black;
+    width: 100%;
+}
+.callout-header {
+    padding: 25px 15px;
+    background: #f44336;
+    font-size: 30px;
+    color: white;
+}

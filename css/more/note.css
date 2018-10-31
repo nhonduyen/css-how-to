@@ -1,0 +1,16 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.note {
+    padding: 10px;
+    color: black;
+    margin-bottom: 15px;
+}
+.danger { background-color: #ffdddd; border-left: 6px solid #f44336;}
+.info { background-color: #e7f3fe; border-left: 6px solid #47a8f5;}
+.success { background-color: #ddffdd; border-left: 6px solid #6abd6e;}
+.warning { background-color: #ffffcc; border-left: 6px solid #ffaa2b;}
+.default { background-color: gray; border-left: 6px solid darkgray;}

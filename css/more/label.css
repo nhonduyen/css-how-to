@@ -1,0 +1,15 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.label {
+    padding: 8px;
+    color: white;
+}
+.danger { background-color: #f44336;}
+.info { background-color: #47a8f5;}
+.success { background-color: #6abd6e;}
+.warning { background-color: #ffaa2b;}
+.default { background-color: gray;}

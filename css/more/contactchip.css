@@ -5,12 +5,8 @@ body {
     margin: 0;
     padding: 0;
 }
-.container {
-    display: flex;
-    width: 100%;
-}
+
 .chip {
-    width: 30%;
     display: inline-block;
     padding: 0 25px;
     height: 50px;
@@ -20,6 +16,7 @@ body {
     background-color: #f1f1f1;
 }
 .chip img {
+    float: left;
     margin: 0 10px 0 -25px;
     height: 50px;
     width: 50px;
@@ -37,8 +34,4 @@ body {
 }
 .closeBtn:hover {
     color: #000000;
-}
-.name {
-    padding-top: 20px;
-    background-color: red;
 }

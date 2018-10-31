@@ -1,0 +1,29 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.alert {
+    padding: 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+.danger { background-color: #f44336;}
+.info { background-color: #47a8f5;}
+.success { background-color: #6abd6e;}
+.warning { background-color: #ffaa2b;}
+.default { background-color: gray;}
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closebtn:hover {
+    color: black;
+}
