@@ -1,0 +1,21 @@
+.float-right-sm {
+    background-color: yellow;
+}
+.float-right-lg {
+    background-color: pink;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+@media screen and (max-width: 768px) {
+    .float-right-sm {
+        float: right;
+    }
+}
+@media screen and (max-width: 769px) {
+    .float-right-lg {
+        float: right;
+    }
+}

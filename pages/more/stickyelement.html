@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./../../css/more/stickyelement.css" />
+    <title>Sticky Element</title>
+</head>
+
+<body>
+    <h1>Sticky Element</h1>
+    <p>Some text</p>
+    <div class="sticky">Sticky Element</div>
+    <h2>Some text bla bla</h2>
+    <script>
+        const text = "Scroll back up again to remove the sticky position.";
+        for (let i = 0; i < 100; i++) {
+            let p = document.createElement("p");
+            p.innerText = text;
+            document.getElementsByTagName("body")[0].appendChild(p);
+
+        }
+    </script>
+</body>
+
+</html>
