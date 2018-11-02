@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Offline Detection</title>
+</head>
+
+<body>
+    <span>Is your browser online? <output id="online"></output></span>
+</body>
+<script>
+    const online = document.getElementById("online");
+    setInterval(function () {
+        online.value = navigator.onLine + " " + new Date().toTimeString();
+    }, 1000);
+</script>
+
+</html>

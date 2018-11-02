@@ -1,0 +1,33 @@
+ul, .tree {
+    list-style-type: none;
+}
+.tree {
+    margin: 0;
+    padding: 0;
+}
+.caret {
+    cursor: pointer;
+    /* Prevent text selection */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+.caret-down::before {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.nested {
+    display: none;
+}
+.active {
+    display: block;
+}

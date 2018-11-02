@@ -1,0 +1,33 @@
+#btn1 {
+    background-color: #f4511e;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+#btn1:hover { opacity: 1; }
+#btn2 {
+    background-color: #ddd;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+#btn2:hover { 
+    background-color: #3e8e41;
+    color: white;
+ }

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Remove Property</title>
+</head>
+
+<body>
+   <output id="prop"></output>
+   <button id="btnDelete">Delete Age</button>
+</body>
+<script>
+    let person= {
+        firstname: "Duyen",
+        lastname: "Nguyen",
+        age: 28,
+        eyeColor: "black"
+    };
+    const prop = document.getElementById("prop");
+    prop.value = ` prop: ${person.firstname} ${person.lastname} ${person.age} ${person.eyeColor}`;
+    const btn = document.getElementById("btnDelete");
+    btn.addEventListener("click", function(){
+        delete person.age;
+        prop.value = ` prop: ${person.firstname} ${person.lastname} ${person.age} ${person.eyeColor}`;
+    });
+</script>
+</html>
