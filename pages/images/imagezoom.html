@@ -5,19 +5,16 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./../../css/images/imageoverlayzoom.css" />
+    <link rel="stylesheet" href="./../../css/images/imagezoom.css" />
+    <script src="./../../js/images/imagezoom.js" defer></script>
     <title>Image Overlay Zoom</title>
 </head>
 
 <body>
-    <a href="./../../images.html">Images</a>
-    <figure class="container">
-        <img src="./../../img/avatar.png" alt="avatar" class="image">
-        <figcaption class="overlay">
-            <span class="text">Overlay zoom</span>
-        </figcaption>
-    </figure>
-   
+    <div class="img-zoom-container">
+        <img id="myimage" src="https://placeimg.com/800/600/people" width="300" height="240" alt="Girl">
+        <div id="myresult" class="img-zoom-result"></div>
+      </div>
 </body>
 
 </html>
