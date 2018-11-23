@@ -32,7 +32,7 @@ function processLoadImgs() {
         if (debounceTimer) {
             this.window.clearTimeout(debounceTimer);
         }
-        debounceTimer = this.window.setTimeout(() => {
+        debounceTimer = this.window.setTimeout(function () {
             handleScroll();
         }, 100);
     }
