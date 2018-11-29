@@ -2,7 +2,7 @@
 "use strict";
 let defaultLocation = [51.505, -0.09];
 if (navigator.geolocation) {
-    navigator.geolocation.watchPosition(function (loc) {
+    navigator.geolocation.getCurrentPosition(function (loc) {
         defaultLocation = [loc.coords.latitude, loc.coords.longitude];
         console.log(defaultLocation);
         showMap(defaultLocation);
